@@ -8,6 +8,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+    <style>
+        .row {
+        display: flex;
+        }
+        .lcolumn {
+        width: 35%;
+        flex: 35%;
+        }
+        .rcolumn {
+        width: 65%;
+        flex: 65%;
+        }
+    </style>
 	<body class="is-preload">
 
     <!-- Wrapper -->
@@ -47,7 +60,7 @@
                                         quantum computing, robotics, and video game development. I work on software to 
                                         enable intelligent arm movement with the Cornell 
                                         Mars Rover project team during the school year, and am developing a program 
-                                        to automate circuit verification for qubit ion trap PCBs at Honeywell Quantum 
+                                        to automate circuit verification for qubit ion trap boards at Honeywell Quantum 
                                         through summer 2021. I also love playing badminton and doing cardio at the gym 
                                         in my free time.</p>
 
@@ -64,6 +77,11 @@
 
                 <!-- First Section -->
                     <section id="first" class="main special">
+                        <style>
+                            h3{
+                                margin-bottom: 3px;
+                            }
+                        </style>
                         <header class="major">
                             <h2>Education</h2>
                         </header>
@@ -71,10 +89,11 @@
                             <center>
                                 <img src="images/cornell_logo.png" alt="Cornell University."/>
                                 <!--<h2 align="right">Cornell University</h2>-->
-                                <p align=>B.S. Engineering Physics, Computer Science '23</p>
-                                <ul class="actions special">
-                                    <a href="generic.html" class="button" >See Notable Coursework</a>
-                                </ul>
+                                <p align=>B.S. Engineering Physics and Computer Science '23</p>
+                                <h4 align="left">Some Notable Coursework:</h4>
+                                <h5 align="left">Physics: Mechanics, Electromagnetism I & II, Waves, Quantum Mechanics</h5>
+                                <h5 align="left">CS: Machine Learning, Algorithms, Functional Prog., Operating Systems, OOP</h5>
+                                <h5 align="left">Math: Mathematical Physics, Multivariable Calc., Linear Algebra, Differential Eq.</h5>
                             </center>
                         </ul>
                         <footer class="major">
@@ -86,30 +105,59 @@
                         <header class="major">
                             <h2>Experience</h2>
                         </header>
-                        <ul class="statistics">
-                            <li class="style1">
-                                <img src="images/hlogo.png" alt="Honeywell"/>
-                            </li>
-                            <li class="style2">
-                                <span class="icon fa-folder-open"></span>
-                                <strong>8,192</strong> Magna
-                            </li>
-                            <li class="style3">
-                                <span class="icon solid fa-signal"></span>
-                                <strong>2,048</strong> Tempus
-                            </li>
-                            <li class="style4">
-                                <span class="icon solid fa-laptop"></span>
-                                <strong>4,096</strong> Aliquam
-                            </li>
-                            <!--
-                            <li class="style5">
-                                <span class="icon fa-gem"></span>
-                                <strong>1,024</strong> Nullam
-                            </li>
-                            -->
-                        </ul>
-                        <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+                        <center>
+                            <div class="row">
+                                <div class="lcolumn" align="Right">
+                                    <img  src='images/hlogo.png' alt='Honeywell'>
+                                </div>
+                                <div class="rcolumn" align="Left">
+                                    <h3><Strong>Physics Lab Technician Intern @ Honeywell</Strong></h3>
+                                    <h5>Jun 2021 - Aug 2021 | Broomfield, Colorado</h5>
+                                    <p>I'm currently developing a Python application to automate the circuit verification of a qubit 
+                                        ion trap board, which runs capacitance and resistance
+                                        tests on hundreds of PCB pins to ensure proper qubit communication and manipulation.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="lcolumn" align="Right">
+                                    <img  src='images/cmrlogo.png' alt='Honeywell'>
+                                </div>
+                                <div class="rcolumn" align="Left">
+                                    <h3><Strong>Software Engineer @ Cornell Mars Rover</Strong></h3>
+                                    <h5>Sept 2020 - Present | Ithaca, New York</h5>
+                                    <p>I worked to improve the Rover's Hardware Abstraction Layer's messaging efficiency to reduce
+                                        control lag, and am currently planning out an implementation of Inverse Kinematics for the Rover’s 
+                                        arm to enable intelligent endpoint movement without manually writing to individual motors.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="lcolumn" align="Right">
+                                    <img  src='images/clogo.png' alt='Honeywell'>
+                                </div>
+                                <div class="rcolumn" align="Left">
+                                    <h3><Strong>Undergrad Teaching Assistant @ Cornell Physics</Strong></h3>
+                                    <h5>Jan 2019 - Present | Ithaca, New York</h5>
+                                    <p>I served as a laboratory section TA for Mechanics, where I guided students towards
+                                        creative but rigorous approaches to replicating results seen in lectures. I also 
+                                        served as a discussion section TA for Electromagnetism and Waves, where I provided
+                                        intuition and physical reasoning to teach course material.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="lcolumn" align="Right">
+                                    <img  src='images/mercklogo.png' alt='Honeywell'>
+                                </div>
+                                <div class="rcolumn" align="Left">
+                                    <h3><Strong>Automation Developer Intern @ Merck</Strong></h3>
+                                    <h5>Jun 2020 - Dec 2020 | Kenilworth, New Jersey</h5>
+                                    <p>I implemented efficient automation processes for time-consuming business tasks
+                                        within the Merck Research Lab space to speed up the collection and analysis of 
+                                        competitor drug information using Python, Selenium, and Pandas.
+                                    </p>
+                                </div>
+                            </div>
+                        </center>
                         <footer class="major">
                         </footer>
                     </section>
