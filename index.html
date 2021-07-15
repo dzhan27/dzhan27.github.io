@@ -20,6 +20,18 @@
         width: 65%;
         flex: 65%;
         }
+        .row2 {
+        display: flex;
+        }
+        .lcolumn2 {
+        min-width: 200px;
+        width: 25%;
+        flex: 25%;
+        }
+        .rcolumn2 {
+        width: 75%;
+        flex: 75%;
+        }
     </style>
 	<body class="is-preload">
 
@@ -28,7 +40,6 @@
 
             <!-- Header -->
                 <header id="header" class="alt">
-                    <span class="logo"><img src="images/pfp.png" alt="My profile picture." /></span>
                     <h1>Hey, I'm Dan!</h1>
                     <p>A software engineer and aspiring physicist.</p>
                 </header>
@@ -55,7 +66,12 @@
                                     <header class="major">
                                         <h2>About Me</h2>
                                     </header>
-                                    <p>I'm Daniel Zhan, an undergrad studying Engineering Physics and Computer Science 
+                                    <div class="row2">
+                                    <div class="lcolumn2">
+                                        <span class="logo"><img src="images/pfp.png" alt="My profile picture." /></span>
+                                    </div>
+                                    <div class="rcolumn2" align="left">
+                                        <p>I'm Daniel Zhan, an undergrad studying Engineering Physics and Computer Science 
                                         at Cornell University. Some of my technical interests include space, 
                                         quantum computing, robotics, and video game development. I work on software to 
                                         enable intelligent arm movement with the Cornell 
@@ -63,7 +79,9 @@
                                         to automate circuit verification for qubit ion trap boards at Honeywell Quantum 
                                         through summer 2021. I also love playing badminton and doing cardio at the gym 
                                         in my free time.</p>
-
+                                    </div>
+                                    
+                                    </div>
                                     <p>I'm always open to new challenges and projects! You can reach me at dz268@cornell.edu.</p>
                                     <!--
                                     <ul class="actions">
