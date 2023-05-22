@@ -26,12 +26,43 @@
         width: 75%;
         flex: 75%;
         }
+        .pfp {
+        background: images/transparent 50% / cover; 
+        border-radius: 15%;
+        width: 200px;
+        }
+        .companylogo {
+            background: images/transparent 50% / cover;
+            width:100px;
+        }
+        .projectlogo {
+            background: images/transparent 50% / cover;
+            width:200px;
+            border-radius: 15%;
+        }
+        .coursework {
+            width:500px;
+        }
+        .cornelllogo {
+            width:372px;
+        }
 
         @media screen and (max-width: 650px) {
         .lcolumnthin {
         display: none !important;
-    }
-}
+            }
+        .projectlogo {
+            background: images/transparent 50% / cover;
+            width:120px;
+            border-radius: 15%;
+            }
+        .coursework {
+            width:380px;
+            }
+        .cornelllogo {
+            width:279px;
+            }
+        }
     </style>
 	<body class="is-preload">
 
@@ -68,10 +99,7 @@
                                     </header>
                                     <div class="row">
                                     <div class="lcolumn">
-                                        <span class="logo"><img src="images/pfp.png" alt="My profile picture." 
-                                            style="background: images/transparent 50% / cover; 
-                                            border-radius: 15%;
-                                            width:200px;"/></span>
+                                        <span class="logo"><img src="images/pfp.png" alt="My profile picture." class="pfp"/></span>
                                     </div>
                                     <div class="rcolumn" align="left">
                                         <p>I'm Daniel Zhan, a recently graduated Cornell undergrad with majors in Engineering Physics
@@ -122,10 +150,9 @@
                         </header>
                         <ul class="features">
                             <center>
-                                <img src="images/cornell_logo.png" alt="Cornell University."/>
-                                <!--<h2 align="right">Cornell University</h2>-->
+                                <img src="images/cornell_logo.png" alt="Cornell University." class="cornelllogo"/>
                                 <p align=>B.S. Engineering Physics & Computer Science '23</p>
-                                <div style="width:500px;">
+                                <div class="coursework">
                                 <h4 align="left">Notable Coursework:</h4>
                                 <h5 align="left"><b>Physics:</b> Mechanics <i>(TA)</i>, Electromagnetism I <i>(TA)</i> & II, Waves <i>(TA)</i>,
                                     Analytical Mechanics, Electrodynamics, Quantum Mechanics I & II, Statistical Thermodynamics, Electronic Circuits, 
@@ -153,9 +180,7 @@
                         <center>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
-                                    <img  src='images/lockheed.png' alt='Lockheed Martin'
-                                    style="background: images/transparent 50% / cover;
-                                    width:100px;">
+                                    <img  src='images/lockheed.png' alt='Lockheed Martin' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Incoming Staff Engineer @ Lockheed Martin</Strong></h3>
@@ -165,9 +190,7 @@
                             </div>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
-                                    <img  src='images/clogo.png' alt='Cornell ECE'
-                                    style="background: images/transparent 50% / cover;
-                                    width:100px;">
+                                    <img  src='images/clogo.png' alt='Cornell ECE' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Undergrad Research Assistant @ Seyler Group</Strong></h3>
@@ -182,9 +205,7 @@
                             </div>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
-                                    <img  src='images/clogo.png' alt='Cornell AEP'
-                                    style="background: images/transparent 50% / cover;
-                                    width:100px;">
+                                    <img  src='images/clogo.png' alt='Cornell AEP' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Undergrad Research Assistant @ Fuchs Group</Strong></h3>
@@ -201,9 +222,7 @@
                             </div>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
-                                    <img  src='images/hlogo.png' alt='Honeywell'
-                                    style="background: images/transparent 50% / cover;
-                                    width:100px;">
+                                    <img  src='images/hlogo.png' alt='Honeywell' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Physics Lab Technician Intern @ Honeywell</Strong></h3>
@@ -219,9 +238,7 @@
                             </div>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
-                                    <img  src='images/cmrlogo.png' alt='Cornell Mars Rover'
-                                    style="background: images/transparent 50% / cover;
-                                    width:100px;">
+                                    <img  src='images/cmrlogo.png' alt='Cornell Mars Rover' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Software Engineer @ Cornell Mars Rover</Strong></h3>
@@ -237,9 +254,7 @@
                             </div>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
-                                    <img  src='images/mercklogo.png' alt='Merck'
-                                    style="background: images/transparent 50% / cover;
-                                    width:100px;">
+                                    <img  src='images/mercklogo.png' alt='Merck' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Automation Developer Intern @ Merck</Strong></h3>
@@ -263,10 +278,7 @@
                             <ul class="features">
                             <li>
                                 <span></span>
-                                <img src="images/aphelion.png" alt="Aphelion Defense"
-                                style="background: images/transparent 50% / cover; 
-                                border-radius: 15%;
-                                width:200px;">
+                                <img src="images/aphelion.png" alt="Aphelion Defense" class="projectlogo">
                                 <br><br>
                                 <h6><strong>Aphelion Defense</strong></h6>
                                 <p>I served as team lead for a team of ten to develop a mobile video game.
@@ -278,10 +290,7 @@
                             <li>
                                 <span></span>
 
-                                <img src="images/generalfusion.png" alt="General Fusion"
-                                style="background: images/transparent 50% / cover; 
-                                border-radius: 15%;
-                                width:200px;">
+                                <img src="images/generalfusion.png" alt="General Fusion" class="projectlogo">
                                 <br><br>
                                 <h6><strong>General Fusion Research Project</strong></h6>
                                 <p>I worked with a partner to provide a technical analysis of
@@ -293,10 +302,7 @@
                             </li>
                             <li>
                                 <span></span>
-                                <img src="images/fringes.png" alt="Interference fringes of mercury green line"
-                                style="background: images/transparent 50% / cover; 
-                                border-radius: 15%;
-                                width:200px;">
+                                <img src="images/fringes.png" alt="Interference fringes of mercury green line" class="projectlogo">
                                 <br><br>
                                 <h6><strong>Michelson Interferometer Project</strong></h6>
                                 <p>I utilized a Michelson Interferometer apparatus to measure the relative distance between two mirrors
@@ -307,10 +313,7 @@
                             </li>
                             <li>
                                 <span></span>
-                                <img src="images/tuningfork.png" alt="Tuning fork made of quartz crystal"
-                                style="background: images/transparent 50% / cover; 
-                                border-radius: 15%;
-                                width:200px;">
+                                <img src="images/tuningfork.png" alt="Tuning fork made of quartz crystal" class="projectlogo">
                                 <br><br>
                                 <h6><strong>Mechanical Resonator Research Project</strong></h6>
                                 <p>I analyzed the oscillation properties of a piezoelectric quartz resonator using circuit-based methods, and fit resulting
@@ -320,10 +323,7 @@
                             </li>
                             <li>
                                 <span></span>
-                                <img src="images/cubad.png" alt="Cornell Badminton Logo"
-                                style="background: images/transparent 50% / cover; 
-                                border-radius: 15%;
-                                width:200px;">
+                                <img src="images/cubad.png" alt="Cornell Badminton Logo" class="projectlogo">
                                 <br><br>
                                 <h6><strong>Cornell Badminton Club Site</strong></h6>
                                 <p>I created a homepage for the Cornell Badminton Club and Team,
@@ -334,10 +334,7 @@
                             </li>
                             <li>
                                 <span></span>
-                                <img src="images/pfp.png" alt="Me"
-                                style="background: images/transparent 50% / cover; 
-                                border-radius: 15%;
-                                width:200px;">
+                                <img src="images/pfp.png" alt="Me" class="projectlogo">
                                 <br><br>
                                 <h6><strong>This website!</strong></h6>
                                 <p>It's a static website that serves as a portfolio for my work so far. 
