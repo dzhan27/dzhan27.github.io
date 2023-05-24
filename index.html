@@ -29,7 +29,7 @@
         .pfp {
         background: images/transparent 50% / cover; 
         border-radius: 15%;
-        width: 200px;
+        width: 175px;
         }
         .companylogo {
             background: images/transparent 50% / cover;
@@ -198,12 +198,18 @@
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Undergrad Research Assistant @ Seyler Group</Strong></h3>
                                     <h5>Sept 2022 - May 2023 | Ithaca, NY</h5>
-                                    <p>I'm modifying a simulation to model the magnetohydrodynamic (MHD) flow of
-                                        plasmas in the presence of magnetic fields by including terms to 
-                                        account for the Hall effect. This has a direct application to various
-                                        nuclear fusion reactor designs, where fuel must be ignited to plasma-like
-                                        conditions before fusion reactions can occur. The program is being 
-                                        developed in Fortran 95. </p>
+                                    <p>I expanded upon 2D and 3D simulations modelling the magnetohydrodynamic (MHD) flow of
+                                        plasmas in the presence of magnetic fields. I used Fortran 90 to simulate magnetic fields 
+                                        ablating (exploding) a metal solid and manipulating the resulting plasma into a coherent
+                                        jet. I utilized explicit concurrent programming in the simulation over 32 space cells (corresponding
+                                        to 32 computational cores available in the simulating computer) with interacting boundaries
+                                        to reduce simulation runtime from a week to 5 hours.
+                                    </p>
+                                    <p>Plasma jets of certain shapes could have applications to nuclear fusion energy.
+                                        For example, a basic way to induce nuclear fusion is to point two jet-creating configurations
+                                        in extreme temperature and pressure conditions towards each other. The particulate
+                                        kinetic energy from the resulting explosion can be collected and used to generate electricity.
+                                    </p>
                                 </div>
                             </div>
                             <div class="row">
@@ -213,14 +219,22 @@
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Undergrad Research Assistant @ Fuchs Group</Strong></h3>
                                     <h5>Sept 2021 - May 2023 | Ithaca, NY</h5>
-                                    <p>I'm developing a program to model the time-based evolution
-                                        of hexagonal Boron Nitride vacancy centers. These centers are strongly
-                                        photoluminescent under certain transitions and may allow for accurate
-                                        quantum sensing applications on the nanometer resolution scale. This
-                                        program is also being generalized to simulate the well-researched
-                                        NV center in diamond and verify results of that system found in 
-                                        literature. The program is being developed in Python using the QuTiP 
-                                        (Quantum Toolbox in Python) library.</p>
+                                    <p>I developed a computational quantum dynamics model of the NV center. The simulation
+                                        focuses on quantifying the rate of photoluminescent (PL) transitions. The NV center
+                                        is excited with a laser, then allowed to relax under varying magnetic field conditions.
+                                        A near-resonant magnetic field was found to reduce the rate of PL transitions by about 20%.
+                                        This program is written in Python using the QuTiP (Quantum Toolbox in Python) library.
+                                    </p>
+                                    <p>
+                                        The NV center is a point defect in the diamond carbon lattice, where one carbon
+                                        atom is completely removed and an adjacent carbon atom is replaced with a nitrogen atom.
+                                        The resulting defect, if negatively charged, has PL transitions. (i.e. You can see when the 
+                                        state of the defect changes, because it emits photons when this happens!) We know
+                                        that a magnetic field with frequency near the resonance frequency of this defect
+                                        reduces the rate of PL transitions. This allows us to use the NV center as a magnetic field
+                                        quantum sensor; we can put this point defect somewhere and simply look at it to determine
+                                        if a magnetic field of that frequency exists there.
+                                    </p>
                                 </div>
                             </div>
                             <div class="row">
@@ -235,7 +249,7 @@
                                         to measure said traps' electrical characteristics. It includes a live hardware calibration, capacitance and resistance
                                         tests, a histogram plotter to visualize data, and a GUI for less software-savvy users. It reduces
                                         testing time by over 90%, personnel needed to test the trap by 100% (wow!), and scales linearly
-                                        with trap size - which is important when Honeywell Quantum makes larger and more sophisticated 
+                                        with trap size - which will be important when Honeywell Quantum makes larger and more sophisticated 
                                         ion traps.</p>
                                 </div>
                             </div>
@@ -318,7 +332,7 @@
                                 <span></span>
                                 <img src="images/tuningfork.png" alt="Tuning fork made of quartz crystal" class="projectlogo">
                                 <br><br>
-                                <h6><strong>Mechanical Resonator Research Project</strong></h6>
+                                <h6><strong>Mechanical Resonator Project</strong></h6>
                                 <p>I analyzed the oscillation properties of a piezoelectric quartz resonator using circuit-based methods, and fit resulting
                                     data to the Butterworth-Van Dyke equivalent circuit. 
                                     I produced a paper and presentation of my findings.
