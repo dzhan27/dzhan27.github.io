@@ -73,7 +73,7 @@
             <!-- Header -->
                 <header id="header" class="alt">
                     <h1>Hey, I'm Daniel!</h1>
-                    <p>A software engineer and aspiring robotics engineer.</p>
+                    <p>A software engineer and aspiring robotics engineer/researcher.</p>
                 </header>
 
             <!-- Nav -->
@@ -103,38 +103,45 @@
                                         <span class="logo"><img src="images/pfp.png" alt="My profile picture." class="pfp"/></span>
                                     </div>
                                     <div class="rcolumn" align="left">
-                                        <p>I'm Daniel Zhan, a recently graduated Cornell undergrad with majors in Computer Science and Engineering Physics. 
-                                            Some things I worked on at Cornell were a quantum dynamics 
-                                            simulation of the NV center in diamond, a magnetohydrodynamics simulation of an ablating plasma jet,
-                                            and arm controls software for a remotely controlled, semi-autonomous "Mars rover". I also love playing badminton and
-                                            weightlifting at the gym.
+                                        <p>Hey, I'm Daniel Zhan. Here's a quick summary about me and my work:
+                                            <li>
+                                                Graduated from Cornell in May 2023 with a B.S. in Computer Science and Engineering Physics.
+                                            </li>
+                                            <li>
+                                                Worked on robotic arm controls software for the Cornell Mars Rover using ROS and C++.
+                                            </li>
+                                            <li>
+                                                Also performed computational physics research in quantum dynamics and plasma physics.
+                                            </li>
+                                            <li>
+                                                Currently spending free time playing badminton and weightlifting.
+                                            </li>
                                         </p>
                                         <p>Some <font color="#ba4dab">programming languages</font> and <font color="#0088e2">paradigms</font> I'm fluent in:<br>
-                                            <span class="language">Python</span>
-                                            <span class="language">Flask</span>
-                                            <span class="language">Java</span>
                                             <span class="language">C++</span>
+                                            <span class="language">Python</span>
+                                            <span class="language">Java</span>
                                             <span class="language">OCaml</span>
                                             <span class="language">HTML/CSS</span>
                                             <span class="language">C#</span>
                                             <span class="language">Fortran</span>
                                             <br>
-                                            <span class="paradigm">Physics Simulation</span>
-                                            <span class="paradigm">Research</span>
-                                            <span class="paradigm">Data Analysis</span>
+                                            <span class="paradigm">Robotics</span>
                                             <span class="paradigm">Machine Learning</span>
+                                            <span class="paradigm">Data Analysis</span>
+                                            <span class="paradigm">Research</span>
+                                            <span class="paradigm">Physics Simulation</span>
+                                            <span class="paradigm">Circuit Design and Analysis</span>
                                             <span class="paradigm">Git</span>
                                             <span class="paradigm">Unix</span>
                                             <span class="paradigm">Arduino Microcontrollers</span>
-                                            <span class="paradigm">Robotics</span>
-                                            <span class="paradigm">Circuit Design and Analysis</span>
                                             <span class="paradigm">Game Design</span>
                                         </p>
                                     </div>
                                     </div>
-                                    <p>I'm always open to new challenges and projects! You can reach me at dz268@cornell.edu.
+                                    <p>I'm always open to new challenges and projects! You can reach me at dzhan27@gmail.com.
                                     <br><br>
-                                    This site was last updated 9/1/23.</p>
+                                    This site was last updated 9/26/23.</p>
                                 </center>
                             </div>
                         </div>
@@ -192,22 +199,41 @@
                             </div>
                             <div class="row">
                                 <div class="lcolumnthin" align="Right">
+                                    <img  src='images/cmrlogo.png' alt='Cornell Mars Rover' class="companylogo">
+                                </div>
+                                <div class="rcolumn" align="Left">
+                                    <h3><Strong>Software Engineer @ Cornell Mars Rover</Strong></h3>
+                                    <h5>Sept 2020 - Jun 2023 | Ithaca, New York</h5>
+                                    <p>I worked with a team of ~70 undergraduate engineers to design and build a rover to compete
+                                        in the annual University Rover Challenge. Some tasks these rovers compete in include performing
+                                        various dexterous operations with the arm and end effector, including inserting
+                                        USB sticks and typing on keyboards. However, our deprecated ROS 1 Forward-Kinematics based control
+                                        scheme made it difficult for us to score well on these tasks. To combat this, I implemented an 
+                                        Inverse-Kinematics based control scheme in ROS 2 and C++ to give arm operators direct control over the 
+                                        position and orientation of the end effector, improving our performance in the most complicated
+                                        tasks. I also re-implemented a Forward-Kinematics based control scheme with more precise joint
+                                        control as a fallback option during competition.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="lcolumnthin" align="Right">
                                     <img  src='images/clogo.png' alt='Cornell ECE' class="companylogo">
                                 </div>
                                 <div class="rcolumn" align="Left">
                                     <h3><Strong>Undergrad Research Assistant @ Seyler Group</Strong></h3>
                                     <h5>Sept 2022 - May 2023 | Ithaca, NY</h5>
-                                    <p>I expanded upon 2D and 3D simulations modelling the magnetohydrodynamic (MHD) flow of
-                                        plasmas in the presence of magnetic fields. I used Fortran 90 to simulate magnetic fields 
-                                        ablating (exploding) a metal solid and manipulating the resulting plasma into a coherent
+                                    <p>I expanded upon 2D and 3D simulations modelling the magnetohydrodynamic flow of
+                                        ablating plasma. I used Fortran 90 to simulate magnetic fields 
+                                        ablating solid aluminum and manipulating the resulting plasma into a coherent
                                         jet. I utilized explicit concurrent programming in the simulation over 32 space cells (corresponding
                                         to 32 computational cores available in the simulating computer) with interacting boundaries
                                         to reduce simulation runtime from a week to 5 hours.
                                     </p>
-                                    <p>Plasma jets of certain shapes could have applications to nuclear fusion energy.
-                                        For example, a basic way to induce nuclear fusion is to point two jet-creating configurations
+                                    <p>Coherent plasma jets have applications to nuclear fusion energy.
+                                        For example, a basic way to induce nuclear fusion is to point two jets of fusible material
                                         in extreme temperature and pressure conditions towards each other. The particulate
-                                        kinetic energy from the resulting explosion can be collected and used to generate electricity.
+                                        kinetic energy from the resulting fusion reaction can be collected and used to generate electricity.
                                     </p>
                                 </div>
                             </div>
@@ -228,11 +254,11 @@
                                         The NV center is a point defect in the diamond carbon lattice, where one carbon
                                         atom is completely removed and an adjacent carbon atom is replaced with a nitrogen atom.
                                         The resulting defect, if negatively charged, has PL transitions. (i.e. You can see when the 
-                                        state of the defect changes, because it emits photons when this happens!) We know
-                                        that a magnetic field with frequency near the resonance frequency of this defect
-                                        reduces the rate of PL transitions. This allows us to use the NV center as a magnetic field
-                                        quantum sensor; we can put this point defect somewhere and simply look at it to determine
-                                        if a magnetic field of that frequency exists there.
+                                        state of the defect changes, because it emits photons when this happens!) We found
+                                        that a pulsing magnetic field with frequency near resonance
+                                        reduces the rate of PL transitions. This could allow us to use the NV center as a
+                                        quantum sensor; we theoretically could put this point defect somewhere and simply look at it 
+                                        to determine if a magnetic field of that frequency exists there.
                                     </p>
                                 </div>
                             </div>
@@ -250,22 +276,6 @@
                                         testing time by over 90%, personnel needed to test the trap by 100% (wow!), and scales linearly
                                         with trap size - which will be important when Honeywell Quantum makes larger and more sophisticated 
                                         ion traps.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/cmrlogo.png' alt='Cornell Mars Rover' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Software Engineer @ Cornell Mars Rover</Strong></h3>
-                                    <h5>Sept 2020 - May 2023 | Ithaca, New York</h5>
-                                    <p>My team of ~70 student engineers builds a rover from scratch every year to compete in an 
-                                        annual University Rover Challenge. It encompasses a multitude of tasks a rover on Mars would
-                                        perform, including autonomous navigation, analysis of soil samples for signs of life, and 
-                                        communication with a remote controller. I implemented Inverse Kinematics for the Rover's arm
-                                        to enable intelligent, automated endpoint movement without requiring specification 
-                                        for individual motor writes and angles, thereby improving Rover competition prospects.
-                                        I also defined macro movement sequences in C++ for the arm to collect and deposit soil to be analyzed at an optimal approach and orientation.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -294,6 +304,16 @@
                             <ul class="features">
                             <li>
                                 <span></span>
+                                <img src="images/flappybird.jpg" alt="Flappy Bird AI" class="projectlogo">
+                                <br><br>
+                                <h6><strong>Flappy Bird AI</strong></h6>
+                                <p>I developed an AI learner for Flappy Bird using reinforcement learning in Python
+                                    with the PyGame library. After several hours of training, the learner achieved
+                                    a score of over 10,000, a score that is impossible to achieve for the average human.
+                                </p>
+                            </li>
+                            <li>
+                                <span></span>
                                 <img src="images/aphelion.png" alt="Aphelion Defense" class="projectlogo">
                                 <br><br>
                                 <h6><strong>Aphelion Defense</strong></h6>
@@ -301,6 +321,16 @@
                                 The game involves multiplayer real-time strategy where multiple players compete against each other
                                 to conquer a dynamic solar system. Try the beta version on any iOS device
                                 <a href="https://testflight.apple.com/join/1AsJ9evb">here</a>.
+                                </p>
+                            </li>
+                            <li>
+                                <span></span>
+                                <img src="images/usamap.jpg" alt="County Political Predictor" class="projectlogo">
+                                <br><br>
+                                <h6><strong>County Political Predictor</strong></h6>
+                                <p>I developed a machine learning model to predict the political leaning of
+                                    every county in the United States based on demographics information such as median income, age,
+                                    and education level. The model achieved >85% accuracy as compared to the 2016 presidential election.
                                 </p>
                             </li>
                             <li>
@@ -322,9 +352,7 @@
                                 <br><br>
                                 <h6><strong>Michelson Interferometer Project</strong></h6>
                                 <p>I utilized a Michelson Interferometer apparatus to measure the relative distance between two mirrors
-                                    and quantify the wavelength splitting of the mercury yellow doublet using optical interference phenomena. 
-                                    I produced a paper and presentation of my findings.
-                                    
+                                    and quantify the wavelength splitting of the mercury yellow doublet using optical interference phenomena.
                                 </p>
                             </li>
                             <li>
@@ -333,8 +361,7 @@
                                 <br><br>
                                 <h6><strong>Mechanical Resonator Project</strong></h6>
                                 <p>I analyzed the oscillation properties of a piezoelectric quartz resonator using circuit-based methods, and fit resulting
-                                    data to the Butterworth-Van Dyke equivalent circuit. 
-                                    I produced a paper and presentation of my findings.
+                                    data to the Butterworth-Van Dyke equivalent circuit.
                                 </p>
                             </li>
                             <li>
