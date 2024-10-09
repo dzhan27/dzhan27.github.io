@@ -11,20 +11,58 @@
     <style>
         .row {
         display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+        .halfcol {
+        width: 50%;
+        flex: 50%;
+        display: flex;
+        justify-content: flex-end;
         }
         .lcolumn {
         min-width: 200px;
-        width: 25%;
-        flex: 25%;
+        width: 35%;
+        flex: 35%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
         }
         .lcolumnthin {
         min-width: 110px;
-        width: 25%;
-        flex: 25%;
+        width: 15%;
+        flex: 15%;
+        }
+        .lcolumnhalf {
+        min-width: 110px;
+        width: 10%;
+        flex: 10%;
+        }
+        .rcolumnhalf {
+        width: 35%;
+        flex: 35%;
+        }
+        .mcolumnwide {
+        width: 70%;
+        flex: 70%;
+        }
+        .mcolumn {
+        width: 50%;
+        flex: 50%;
+        padding-right: 10%;
+        }
+        .mcolumninfo {
+        width: 100%;
+        flex: 100%;
+        padding-left: 15%;
+        padding-right: 5%;
+        justify-content: center;
+        display: flex;
         }
         .rcolumn {
-        width: 75%;
-        flex: 75%;
+        width: 65%;
+        flex: 65%;
+        padding-right: 20%;
         }
         .pfp {
         background: images/transparent 50% / cover; 
@@ -37,7 +75,7 @@
         }
         .projectlogo {
             background: images/transparent 50% / cover;
-            width:200px;
+            width:128px;
             border-radius: 15%;
         }
         .coursework {
@@ -51,6 +89,9 @@
         .lcolumnthin {
         display: none !important;
             }
+        .lcolumnhalf {
+        display: none !important;
+        }
         .projectlogo {
             background: images/transparent 50% / cover;
             width:120px;
@@ -116,22 +157,24 @@
                                                 Spending free time playing badminton, weightlifting, and dabbling in software projects.
                                             </li>
                                         </p>
-                                        <p>Some stuff I've <font color="#ba4dab">used</font> or <font color="#0088e2">done</font> before:<br>
-                                            <span class="language">Python</span>
-                                            <span class="language">C++</span>
-                                            <span class="language">Java</span>
-                                            <span class="language">Fortran</span>
-                                            <span class="language">SQL</span>
-                                            <span class="language">Git</span>
-                                            <span class="language">Unix</span>
-                                            <span class="paradigm">Research</span>
-                                            <span class="paradigm">Robotics</span>
-                                            <span class="paradigm">Software Development</span>
-                                            <span class="paradigm">Computational Modelling</span>
-                                            <span class="paradigm">Circuit Design and Analysis</span>
-                                            <span class="paradigm">Machine Learning</span>
-                                        </p>
                                     </div>
+                                    </div>
+                                    <div class="mcolumnwide">
+                                    <p>Some stuff I've <font color="#ba4dab">used</font> or <font color="#0088e2">done</font> before:<br>
+                                        <span class="language">Python</span>
+                                        <span class="language">C++</span>
+                                        <span class="language">Java</span>
+                                        <span class="language">Fortran</span>
+                                        <span class="language">SQL</span>
+                                        <span class="language">Git</span>
+                                        <span class="language">Unix</span>
+                                        <span class="paradigm">Research</span>
+                                        <span class="paradigm">Robotics</span>
+                                        <span class="paradigm">Software Development</span>
+                                        <span class="paradigm">Computational Modelling</span>
+                                        <span class="paradigm">Circuit Design and Analysis</span>
+                                        <span class="paradigm">Machine Learning</span>
+                                    </p>
                                     </div>
                                     <p>I'm always open to new challenges and projects! You can reach me at dzhan6 (at) jh (dot) edu.
                                     <br><br>
@@ -156,10 +199,10 @@
                                 <div class="lcolumnthin" align="Right">
                                     <img  src='images/jhu.jpg' alt='The Johns Hopkins University' class="companylogo">
                                 </div>
-                                <div class="rcolumn" align="Left">
+                                <div class="mcolumn" align="Left">
                                     <h3><Strong>The Johns Hopkins University</Strong></h3>
                                     <h5>M.S. AI '25</h5>
-                                    <p><Strong>Notable coursework:</Strong>Artificial Intelligence, Reinforcement Learning, Intro to Robotics, Algorithms for Data Science, Mathematical Methods
+                                    <p><Strong>Notable coursework:</Strong> Artificial Intelligence, Reinforcement Learning, Intro to Robotics, Algorithms for Data Science, Mathematical Methods
                                     <br><Strong>Societies:</Strong> Terradynamics Lab, Badminton Club Team
                                     </p>
                                 </div>
@@ -168,16 +211,17 @@
                                 <div class="lcolumnthin" align="Right">
                                     <img  src='images/clogo.png' alt='Cornell University' class="companylogo">
                                 </div>
-                                <div class="rcolumn" align="Left">
+                                <div class="mcolumn" align="Left">
                                     <h3><Strong>Cornell University</Strong></h3>
                                     <h5>B.S. Computer Science & Engineering Physics '23</h5>
                                     <p><Strong>Notable coursework:</Strong> Machine Learning, Robot Learning, Algorithms, Operating Systems,
                                     Computer System Organization, Analytical Mechanics, Electrodynamics, Electronic Circuits, Data Analytics <i>(TA)</i>,
                                     Mechanics and Heat <i>(TA)</i>, Electromagnetism <i>(TA)</i>, Waves and Quantum Physics <i>(TA)</i>
                                     <br><Strong>Societies:</Strong> Badminton Club Team, Cornell Mars Rover, Fuchs Group, 
-                                    Laboratory of Plasma Physics
+                                    Plasma Physics Lab
                                     </p>
                                 </div>
+                                <div class="rcolumnthing" align="Left"></div>
                             </div>
                         </center>
                         </ul>
@@ -188,104 +232,63 @@
                 <!-- Second Section -->
                     <section id="second" class="main special">
                         <header class="major">
-                            <h2>Experience</h2>
+                        <h2>Experience</h2>
                         </header>
-                        <center>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/lockheed.png' alt='Lockheed Martin' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Software Engineer @ Lockheed Martin</Strong></h3>
-                                    <h5>Aug 2023 onwards | Moorestown, NJ</h5>
-                                    <p>I'm developing new functionality and improvements for the Aegis Ballistic 
-                                        Missile Defense System - see my <a href="dz_resume.pdf">resume</a> for a few specific examples.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/cmrlogo.png' alt='Cornell Mars Rover' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Software Engineer @ Cornell Mars Rover</Strong></h3>
-                                    <h5>Sept 2020 - Jun 2023 | Ithaca, New York</h5>
-                                    <p>I worked with a team of ~70 undergraduate engineers to design and build a rover to compete
-                                        in the annual University Rover Challenge. Some tasks these rovers compete in include performing
-                                        various operations with the arm, including inserting
-                                        USB sticks and typing on keyboards. I upgraded our arm control software package
-                                        from ROS 1 to ROS 2, re-implemented all core functionality (including a Forward Kinematics control
-                                        scheme), and developed a new Inverse Kinematics control scheme to expand the robotic arm's 
-                                        capabilities and accelerate mean time completion of almost all tasks.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/clogo.png' alt='Cornell ECE' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Undergrad Research Assistant @ Seyler Group</Strong></h3>
-                                    <h5>Sept 2022 - May 2023 | Ithaca, NY</h5>
-                                    <p>I developed upon 2D and 3D simulations modelling the magnetohydrodynamic flow of
-                                        ablating plasma. I used Fortran 90 to simulate magnetic fields 
-                                        ablating solid aluminum and manipulating the resulting plasma into a coherent
-                                        jet. I utilized explicit concurrent programming in the simulation over 32 space cells (over
-                                        32 computing cores) with interacting boundaries
-                                        to reduce simulation runtime from 1 week to 5 hours.
-                                    </p>
-                                    <p>Coherent plasma jets have applications to nuclear fusion energy.
-                                        For example, a basic way to induce nuclear fusion is to point two jets of fusible material
-                                        in extreme temperature and pressure conditions towards each other. The particulate
-                                        kinetic energy from the resulting fusion reaction can be collected and used to generate electricity.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/clogo.png' alt='Cornell AEP' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Undergrad Research Assistant @ Fuchs Group</Strong></h3>
-                                    <h5>Sept 2021 - May 2023 | Ithaca, NY</h5>
-                                    <p>I developed a computational quantum dynamics model of the NV center in Python using the
-                                        QuTiP library, focusing on quantifying the rate of photoluminescent (PL) transitions. 
-                                        I found that driving the NV center with a resonant magnetic field reduces the PL output
-                                        of relevant transitions by ~20%. This implies the NV center could be useful as a quantum
-                                        magnetic field sensor, i.e. we could put the NV center anywhere and simply "look" at it 
-                                        (collect photon output data) to determine if a resonant magnetic field exists there.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/hlogo.png' alt='Honeywell' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Physics Lab Technician Intern @ Honeywell</Strong></h3>
-                                    <h5>Jun 2021 - Aug 2021 | Broomfield, Colorado</h5>
-                                    <p>I developed a Surface Ion Trap Chip tester to automate testing of Honeywell Quantum’s 
-                                        surface electrode traps. This program is written in Python and interfaces with NI measurement chasse 
-                                        to measure said traps' electrical characteristics. It includes a live hardware calibration, capacitance and resistance
-                                        tests, a histogram plotter to visualize data, and a GUI for less software-savvy users. It reduces
-                                        testing time by over 90%, personnel needed to test the trap by 100% (wow!), and scales linearly
-                                        with trap size - which will be important when Honeywell Quantum makes larger and more sophisticated 
-                                        ion traps.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="lcolumnthin" align="Right">
-                                    <img  src='images/mercklogo.png' alt='Merck' class="companylogo">
-                                </div>
-                                <div class="rcolumn" align="Left">
-                                    <h3><Strong>Robotic Process Automation Intern @ Merck</Strong></h3>
-                                    <h5>Jun 2020 - Dec 2020 | Kenilworth, New Jersey</h5>
-                                    <p>I implemented automation processes using Robotic Process Automation concepts
-                                        to accelerate the processing of competitor medication documentation by >2000% using 
-                                        Python and the Selenium and Pandas libraries.
-                                    </p>
-                                </div>
-                            </div>
-                        </center>
+                        <ul class="features2">
+                            <li>
+                                <span></span>
+                                <img src='images/lockheed.png' alt='Lockheed Martin' class="companylogo">
+                                <br>
+                                <h3><strong>Software Engineer @ Lockheed Martin</strong></h3>
+                                <h5>Aug 2023 onwards | Moorestown, NJ</h5>
+                                <p>I'm developing new functionality and improvements for the Aegis Ballistic Missile Defense System. For example, I developed server-side functionality to select a default radar search doctrine (which streamlines radar search startup time), created a MATLAB modular testing framework to facilitate testing between different silo-ed companies (which significantly increased the speed at which discrepancies in simulation results were identified), and proactively identified and resolved more than 20 other software defects in the backend calculator space. 
+                                </p>
+                            </li>
+                            <li>
+                                <span></span>
+                                <img src='images/cmrlogo.png' alt='Cornell Mars Rover' class="companylogo">
+                                <br>
+                                <h3><strong>Software Engineer @ Cornell Mars Rover</strong></h3>
+                                <h5>Sept 2020 - Jun 2023 | Ithaca, New York</h5>
+                                <p>The Cornell Mars Rover team builds a rover to compete at the University Rover Competition, where it is judged on its ability to perform tasks comparable to a real life Mars Rover. I primarily worked on the software control components of the robotic arm, which was tasked with various dexterous operations such as picking up rocks or typing on keyboards. I devised a new control scheme based on Inverse Kinematics to drastically speed up completion of basic tasks and make more difficult tasks tractable by mapping the movement of the joystick to the position and orientation of the end effector directly. I also upgraded a lot of the controls software package from ROS 1 to 2 and re-implemented a Forward Kinematics based control scheme.
+                                </p>
+                            </li>
+                            <li>
+                                <span></span>
+                                <img src='images/clogo.png' alt='Cornell ECE' class="companylogo">
+                                <br>
+                                <h3><Strong>Undergrad Research Assistant @ Seyler Group</Strong></h3>
+                                <h5>Sept 2022 - May 2023 | Ithaca, NY</h5>
+                                <p>I developed upon 2D and 3D simulations modelling the magnetohydrodynamic flow of ablating plasma. I used Fortran 90 to simulate magnetic fields ablating solid aluminum and manipulating the resulting plasma into a coherent jet. I utilized explicit concurrent programming in the simulation over 32 space cells (over 32 computing cores) with interacting boundaries to reduce simulation runtime from 1 week to 5 hours.
+                                </p>
+                            </li>
+                            <li>
+                                <span></span>
+                                <img  src='images/clogo.png' alt='Cornell AEP' class="companylogo">
+                                <br>
+                                <h3><Strong>Undergrad Research Assistant @ Fuchs Group</Strong></h3>
+                                <h5>Sept 2021 - May 2023 | Ithaca, NY</h5>
+                                <p>I developed a computational quantum dynamics model of the NV center in Python using the QuTiP library, focusing on quantifying the rate of photoluminescent (PL) transitions. I found that driving the NV center with a resonant magnetic field reduces the PL output of relevant transitions by ~20%. This implies the NV center could be useful as a quantum magnetic field sensor, i.e. we could put the NV center anywhere and simply "look" at it (collect photon output with our eyeballs or other measurement device) to determine if a resonant magnetic field exists there.
+                                </p>
+                        </li>
+                            <li>
+                                <span></span>
+                                <img  src='images/hlogo.png' alt='Honeywell' class="companylogo">
+                                <br>
+                                <h3><Strong>Physics Lab Technician Intern @ Honeywell</Strong></h3>
+                                <h5>Jun 2021 - Aug 2021 | Broomfield, Colorado</h5>
+                                <p>I developed a Surface Ion Trap Chip tester to automate testing of Honeywell Quantum's surface electrode traps. This program is written in Python and interfaces with NI measurement chasse to measure said traps' electrical characteristics. It includes a live hardware calibration, capacitance and resistance tests, a histogram plotter to visualize data, and a GUI for less software-savvy users. It reduces testing time by over 90%, personnel needed to test the trap by 100% (wow!), and scales linearly with trap size - which will be important when Honeywell Quantum makes larger and more sophisticated ion traps.</p>
+                        </li>
+                            <li>
+                                <span></span>
+                                <img  src='images/mercklogo.png' alt='Merck' class="companylogo">
+                                <br>
+                                <h3><Strong>Robotic Process Automation Intern @ Merck</Strong></h3>
+                                <h5>Jun 2020 - Dec 2020 | Kenilworth, New Jersey</h5>
+                                <p>I implemented automation processes using Robotic Process Automation tools and concepts to accelerate the processing of competitor medication documentation by >2000% using Python and the Selenium and Pandas libraries. I also contributed basic scripting work to automate other tedious business tasks and workflows.
+                                </p>
+                        </li>
+                        </ul>
                         <footer class="major">
                         </footer>
                     </section>
